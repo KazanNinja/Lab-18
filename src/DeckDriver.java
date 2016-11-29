@@ -5,6 +5,6 @@ public class DeckDriver {
         Deck deck = new Deck();
         deck.addCardsDefault();
 
-        
+        System.out.println(deck);
     }
 }
