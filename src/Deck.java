@@ -30,6 +30,10 @@ public class Deck {
         return CardList.get(i);
     }
 
+    public void removeCard(Card card) {
+        CardList.remove(card);
+    }
+
     public String toString() {
         return "Deck{" +
                 "CardList=" + CardList +
