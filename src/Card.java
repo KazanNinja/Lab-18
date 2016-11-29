@@ -23,7 +23,7 @@ public class Card {
     }
 
     public int getRankInt() {
-        //Checks if the rank is from 2-10 if not returns -1
+        //Checks if the rank is from 1-14 if not returns -1
         if (rank >= 14 || rank <= 0) {
             return rank;
         }

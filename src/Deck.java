@@ -5,13 +5,9 @@ public class Deck {
     private ArrayList<Card> CardList;
 
     public Deck() {
-        CardList = new ArrayList<>();
-    }
 
-    /**
-     * Adds the default playing cards to the ArrayList
-     */
-    public void addCardsDefault() {
+        CardList = new ArrayList<>();
+
         //Adds cards 1-13 with Hearts as the suit
         for(int i = 1; i <= 13; i++) {
             CardList.add(new Card(i, "Hearts"));
@@ -28,6 +24,10 @@ public class Deck {
         for(int i = 1; i <= 13; i++) {
             CardList.add(new Card(i, "Spades"));
         }
+    }
+
+    public Card getCard(int i) {
+        return CardList.get(i);
     }
 
     public String toString() {

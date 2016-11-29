@@ -1,6 +1,9 @@
 
 public class Blackjack {
-    public static void main(String[] args) {
+
+    public int computermove(Deck deck) {
+        int randomChoice = (int) (Math.random() * (13 - 1) + 1);
 
     }
+
 }
