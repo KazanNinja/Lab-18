@@ -1,28 +1,29 @@
 
 public class Card {
 
-    private String rank;
+    private int rank;
     private String suit;
 
-    public Card(String rank, String suit) {
-        if (Integer.parseInt(rank) >= 11 || Integer.parseInt(rank) <= 1) {
-            throw new RuntimeException("The rank must be from 2-10");
-            //Throws a runtime exception because the rank is too high
+    public Card(int newRank, String newSuit) {
+        if (rank >= 14 || rank <= 0) {
+            throw new RuntimeException("The rank must be from 1-13");
+            //Throws a runtime exception because the rank is too high or too low
         }
 
-        this.rank = rank;
-        this.suit = suit;
+        rank = newRank;
+        suit = newSuit;
     }
 
-    public String getRank() {
+
+    public int getRank() {
 
         return rank;
     }
 
     public int getRankInt() {
         //Checks if the rank is from 2-10 if not returns -1
-        if (Integer.parseInt(rank) >= 11 || Integer.parseInt(rank) <= 1) {
-            return Integer.parseInt(rank);
+        if (rank >= 14 || rank <= 0) {
+            return rank;
         }
         return -1;
     }

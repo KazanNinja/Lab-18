@@ -1,7 +1,27 @@
+import java.util.ArrayList;
 
 public class Deck {
 
-    public static void main(String[] args) {
-        Card card = new Card("1", "Hearts");
+    private ArrayList<Card> CardList;
+
+
+    public Deck(ArrayList<Card> cardList) {
+        CardList = cardList;
+    }
+
+    public void addCardsDefault(Card card) {
+
+
+    }
+
+    //Idk why you would need this
+    public void addCard(Card card) {
+        CardList.add(card);
+    }
+
+    public String toString() {
+        return "Deck{" +
+                "CardList=" + CardList +
+                '}';
     }
 }
